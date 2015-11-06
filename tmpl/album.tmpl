@@ -1,0 +1,16 @@
+ <div class="m-scooch m-fluid m-scooch-photos">
+
+          <div id="controls" class="m-scooch-controls">
+              <a class="m-scooch-prev" href="#" data-m-slide="prev">Previous</a>
+              <a class="m-scooch-next" href="#" data-m-slide="next">Next</a>
+          </div>
+           <div class="m-scooch-inner">
+          {{getPhotoNames}}
+          </div>
+ </div>
+ <script>
+if ($.browser.mobile) {
+	$('#controls').remove();
+}
+ $('.m-scooch').scooch();
+ </script>

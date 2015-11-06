@@ -1,0 +1,1 @@
+cf ic group create --max 1 -p 3000 -m 256 --name mygophoto --env "V2CREDS={\"CloudIntegration\":{\"auth_url\":\"https://keystone.open.ibmcloud.com\",\"project\":\"749af592\",\"credentials\":{\"userid\":\"westmakaha@yahoo.com\",\"password\":\"I\"}}}" --env "UPDISABLE=T" singli/gophoto

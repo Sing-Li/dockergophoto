@@ -1,0 +1,1 @@
+ice --verbose run -p 3000 --memory 256 --name mygophoto --env "V2CREDS={\"CloudIntegration\":{\"auth_url\":\"https://keystone.open.ibmcloud.com\",\"project\":\"749af592-\",\"credentials\":{\"userid\":\"westmakaha@yahoo.com\",\"password\":\"I\"}}}" singli/gophoto
