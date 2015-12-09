@@ -15,7 +15,7 @@ Your app will be operating in the IBM Bluemix cloud, and your photos archived pr
 
 You can manage your uploaded photos using the Object Storage service management console in the IBM Bluemix Dashboard.
 
-![Object Storage Management console displaying a folder of objects under the Object Storage service]()
+![Object Storage Management console displaying a folder of objects under the Object Storage service](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/objstoreconsole.png)
 
 Try out [gophoto hosted on Bluemix](http://dockergophoto.mybluemix.net/) now.
 
