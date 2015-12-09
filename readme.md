@@ -1,19 +1,24 @@
-## gophoto - A Photo Archive in the Cloud 
-### Crafted in the Go Programming language
-####  Hosted on Bluemix and photos stored on (Swift based) Object Storage v2 service
+## dockergophoto - Containerize A Photo Archive App with Docker  
+### Deployed with IBM Containers for Bluemix
+##### Crafted in the Go Programming language
+##### Running in the cloud and photos stored on (Swift based) Bluemix Object Storage 
 
-Learn how to build a mobile compatible photo upload and storage webapp using the Go programming language.  Use the [Martini application framework](https://github.com/go-martini/martini) for backend and [jQuery mobile](https://github.com/jquery/jquery-mobile) for UI.
+Learn how to use docker for coding, testing, and deployment of applications written in the Go Programming language.   
 
-Then deploy your app in the IBM Bluemix cloud, and have your photos archived privately onto Object Storage v2 service - a robust, highly available and scalable storage solution.
+See how to integrate OpenStack Swift based object storage rapidly and easily in your development and testing using profesionally curated Docker containers.
+
+Finally, find out how to go from local testing to cloud deployment - enabling Internet-wide access to your app - in minutes with IBM Containers for Bluemix.
+
+Your app will be operating in the IBM Bluemix cloud, and your photos archived privately onto Object Storage - a robust, highly available and scalable storage solution.
 
 ![Image of gophoto running on iPhone](http://www.ibm.com/developerworks/cloud/library/cl-golang-photo-archive-bluemix/figure1.jpg)
 
-You can manage your uploaded photos using the IBM Cloud Management console (based on OpenStack Horizon).
+You can manage your uploaded photos using the Object Storage service management console in the IBM Bluemix Dashboard.
 
-![IBM Cloud Management console displaying a folder of objects under the Object Storage v2 service](http://www.ibm.com/developerworks/cloud/library/cl-golang-photo-archive-bluemix/figure3.png)
+![Object Storage Management console displaying a folder of objects under the Object Storage service]()
 
-Try out [gophoto hosted on Bluemix](http://gophoto.mybluemix.net/) now.
+Try out [gophoto hosted on Bluemix](http://dockergophoto.mybluemix.net/) now.
 
-Read the [tutorial and see the screencast](http://www.ibm.com/developerworks/cloud/library/cl-golang-photo-archive-bluemix/index.html).
+Read the [tutorial and see the screencast]().
 
 The code in this repository may be updated from time to time.
