@@ -30,7 +30,7 @@ type ObjStoreV2Info struct {
 	Authurl     string                `json:"auth_url"`
 	// Swifturl    string                `json:"swift_url"`
 	// Sdkauthurl  string                `json:"sdk_url"`
-	 Project     string                `json:"project"`
+	 Domain     string                `json:"domain"`
 	// Region      string                `json:"region"`
 	Credentials ObjStoreV2Credentials `json:"credentials"`
 }
@@ -105,7 +105,8 @@ func main() {
 
 	var runport string
 	var runhost string
-	var project string
+	// var project string
+	var domain string
 
 	username := "test:tester"
 	password := "testing"
@@ -141,10 +142,10 @@ func main() {
 		}
 
 		creds := info.Credentials
-		authurl = info.Authurl + "/v2.0"
+		authurl = info.Authurl + "/v3"
 		username = creds.Userid
 		password = creds.Password
-		project = info.Project
+		domain = info.Domain
 
 	} else {
 		log.Printf("No " + CREDS_ENV + ", using defaults.\n")
@@ -155,6 +156,8 @@ func main() {
 	log.Printf("Using authurl %v+\n", authurl)
 	log.Printf("Using username %v+\n", username)
 	log.Printf("Using password %v+\n", password)
+	log.Printf("Using domain %v+\n", domain)
+
 	log.Printf("Global URI is  %v+\n", globalurl)
 	m := martini.Classic()
 
@@ -162,7 +165,7 @@ func main() {
 		UserName: username,
 		ApiKey:   password,
 		AuthUrl:  authurl,
-		Tenant:   project,
+		Domain:   domain,
 	}
 
 	// Authenticate
